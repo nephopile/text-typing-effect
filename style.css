@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1f20;
+}
+
+h1 {
+  font-family: "Incosolata", Consolas, monospace;
+  font-size: 4em;
+  color: #74b9ff;
+}
+
+.text {
+  position: relative;
+}
+
+.text::after {
+  content: "|";
+  font-weight: 100;
+  position: absolute;
+  right: 0;
+  color: white;
+  background-color: #1d1f20;
+  width: 100%;
+  animation: typing 3s steps(14) alternate infinite, blink 0.9s infinite;
+}
+
+@keyframes typing {
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
